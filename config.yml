@@ -36,7 +36,7 @@ dotfiles_repo_version: main
 dotfiles_files:
   - .zshrc
   - .zshenv
-  - .zshprofile
+  - .zprofile
   - .gitignore
   - .gitconfig
   - .macos

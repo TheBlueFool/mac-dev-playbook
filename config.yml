@@ -77,6 +77,9 @@ homebrew_taps:
   - homebrew/core
   - homebrew/cask
   - homebrew/bundle
+  - homebrew/autoupdate
+  - homebrew/cask-versions
+  - homebrew/services
 
 homebrew_cask_appdir: /Applications
 homebrew_cask_apps:

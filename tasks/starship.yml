@@ -1,0 +1,15 @@
+---
+# Copy configuration.
+- name: Ensure vscode config dir exists
+  ansible.builtin.file:
+    path: ~/.config
+    state: directory
+    mode: '0755'
+
+# Copy configuration.
+- name: Symlink Starship config file into config dir
+  ansible.builtin.file:
+    src: ~/dotfiles/starship.toml
+    dest: ~/.config/starship.toml
+    state: link
+    # ln -fs ~/dotfiles/starship.toml ~/.config/starship.toml

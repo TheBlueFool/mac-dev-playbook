@@ -2,7 +2,7 @@
 - hosts: all
 
   vars_files:
-    - default.config.yml
+    - config.yml
 
   pre_tasks:
     - name: Include playbook configuration.
@@ -45,6 +45,15 @@
     - import_tasks: tasks/sublime-text.yml
       when: configure_sublime
       tags: ['sublime-text']
+
+    - import_tasks: tasks/kitty.yml
+      when: configure_kitty
+
+    - import_tasks: tasks/starship.yml
+      when: configure_starship
+
+    - import_tasks: tasks/vscode.yml
+      when: configure_vscode
 
     - name: Run configured post-provision ansible task files.
       include_tasks: "{{ outer_item }}"

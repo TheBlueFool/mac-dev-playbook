@@ -1,0 +1,14 @@
+---
+# Copy configuration.
+- name: Ensure vscode config dir exists
+  ansible.builtin.file:
+    path: ~/.config/kitty/
+    state: directory
+    mode: '0755'
+
+# Copy configuration.
+- name: Symlink config file into config dir
+  ansible.builtin.file:
+    src: ~/dotfiles/kitty/* 
+    dest: ~/.config/kitty/
+    state: link

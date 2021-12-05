@@ -1,6 +1,6 @@
 ---
 # Copy configuration.
-- name: Ensure vscode config dir exists
+- name: Ensure Starship config dir exists
   ansible.builtin.file:
     path: ~/.config
     state: directory

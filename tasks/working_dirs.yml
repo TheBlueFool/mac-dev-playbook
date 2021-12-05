@@ -1,0 +1,12 @@
+---
+- name: Ensure workbench  dir exists
+  ansible.builtin.file:
+    path: ~/_workbench
+    state: directory
+    mode: '0755'
+
+- name: Ensure local bin dir exists
+  ansible.builtin.file:
+    path: ~/bin
+    state: directory
+    mode: '0755'

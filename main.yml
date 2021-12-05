@@ -55,6 +55,9 @@
     - import_tasks: tasks/vscode.yml
       when: configure_vscode
 
+    - import_tasks: tasks/working_dirs.yml
+      when: configure_working_dirs
+
     - name: Run configured post-provision ansible task files.
       include_tasks: "{{ outer_item }}"
       loop_control:

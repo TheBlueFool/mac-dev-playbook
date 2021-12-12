@@ -81,6 +81,7 @@ homebrew_taps:
   - homebrew/autoupdate
   - homebrew/cask-versions
   - homebrew/services
+  - homebrew/cask-fonts
 
 homebrew_cask_appdir: /Applications
 homebrew_cask_apps:
@@ -98,6 +99,8 @@ homebrew_cask_apps:
   - visual-studio-code
   - jetbrains-toolbox
   - kitty
+  - font-jetbrains-mono  
+  - font-jetbrains-mono-nerd-font
 
 # See `geerlingguy.mas` role documentation for usage instructions.
 mas_installed_apps: []

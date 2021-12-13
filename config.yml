@@ -59,20 +59,27 @@ homebrew_installed_packages:
   - pyenv
   - pipenv
   - pre-commit
-  - github/gh/gh
+  - direnv
+  - gnupg
   - go
   - gpg
   - httpie
   - node
   - nvm
   - ssh-copy-id
-  - libevent
   - sqlite
   - cowsay
   - gettext
   - readline
   - openssl
   - wget
+  - jq
+  - lolcat
+  - nano
+  - the_silver_searcher
+  - unzip
+  - pass
+  # - coreutils
 
 homebrew_taps:
   - homebrew/core
@@ -99,6 +106,8 @@ homebrew_cask_apps:
   - visual-studio-code
   - jetbrains-toolbox
   - kitty
+  - spotify
+  - 1password-cli
   - font-jetbrains-mono  
   - font-jetbrains-mono-nerd-font
 

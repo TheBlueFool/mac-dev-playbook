@@ -79,6 +79,9 @@ homebrew_installed_packages:
   - the_silver_searcher
   - unzip
   - pass
+  - ykman
+  - ykpers
+  - yubico-pam
   # - coreutils
 
 homebrew_taps:

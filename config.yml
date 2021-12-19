@@ -114,6 +114,8 @@ homebrew_cask_apps:
   - font-jetbrains-mono  
   - font-jetbrains-mono-nerd-font
   - obsidian
+  - vivaldi
+  - stay
 
 # See `geerlingguy.mas` role documentation for usage instructions.
 mas_installed_apps: []

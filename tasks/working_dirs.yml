@@ -48,3 +48,19 @@
     mode: u=rw,g=r,o=r
     modification_time: preserve
     access_time: preserve
+
+- name: Copy global git ignore
+  ansible.builtin.file:
+    src: ~/dotfiles/.gitignore_global
+    dest: ~/.gitignore
+    state: link
+
+
+- name: Copy global git config
+  ansible.builtin.file:
+    src: ~/dotfiles/.gitconfig
+    dest: ~/.gitconfig
+    state: link
+
+
+

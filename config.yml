@@ -46,82 +46,26 @@ dotfiles_files:
   - kitty.conf
   - starship.toml
   - RectangleConfig.json
+  - Brewfile
 
-homebrew_installed_packages:
+
+homebrew_use_brewfile: true
+homebrew_brewfile_dir: '~'
+
+homebrew_installed_packages: []
   # - ansible # Installed via Pip.
-  - starship
-  - htop
-  - zsh-syntax-highlighting
-  - zsh-completions
-  - zsh-autosuggestions
-  - zsh-history-substring-search
-  - git
-  - pyenv
-  - pipenv
-  - pre-commit
-  - direnv
-  - gnupg
-  - go
-  - gpg
-  - httpie
-  - node
-  - nvm
-  - ssh-copy-id
-  - sqlite
-  - cowsay
-  - gettext
-  - readline
-  - openssl
-  - wget
-  - jq
-  - lolcat
-  - nano
-  - the_silver_searcher
-  - unzip
-  - pass
-  - ykman
-  - ykpers
-  - yubico-pam
-  - yubico-piv-tool
   # - coreutils
 
 homebrew_taps:
   - homebrew/core
   - homebrew/cask
   - homebrew/bundle
-  - homebrew/autoupdate
-  - homebrew/cask-versions
-  - homebrew/services
-  - homebrew/cask-fonts
-  - homebrew/cask-drivers
+
 
 homebrew_cask_appdir: /Applications
-homebrew_cask_apps:
-  - chromedriver
-  - docker
-  - firefox
-  - firefox-developer-edition
-  - google-chrome
-  - google-chrome-canary
-  - rectangle
-  - alfred
-  - gitkraken
-  - 1password
-  - iterm2
-  - visual-studio-code
-  - jetbrains-toolbox
-  - kitty
-  - spotify
-  - 1password-cli
-  - font-jetbrains-mono  
-  - font-jetbrains-mono-nerd-font
-  - obsidian
-  - vivaldi
-  - stay
-  - yubico-authenticator
-  - yubico-yubikey-manager
-  - yubico-yubikey-personalization-gui
-  - yubico-yubikey-piv-manager
+homebrew_cask_apps: []
+
+
 
 # See `geerlingguy.mas` role documentation for usage instructions.
 mas_installed_apps: []

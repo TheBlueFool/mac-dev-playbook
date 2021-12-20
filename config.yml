@@ -82,6 +82,7 @@ homebrew_installed_packages:
   - ykman
   - ykpers
   - yubico-pam
+  - yubico-piv-tool
   # - coreutils
 
 homebrew_taps:
@@ -92,6 +93,7 @@ homebrew_taps:
   - homebrew/cask-versions
   - homebrew/services
   - homebrew/cask-fonts
+  - homebrew/cask-drivers
 
 homebrew_cask_appdir: /Applications
 homebrew_cask_apps:
@@ -116,6 +118,10 @@ homebrew_cask_apps:
   - obsidian
   - vivaldi
   - stay
+  - yubico-authenticator
+  - yubico-yubikey-manager
+  - yubico-yubikey-personalization-gui
+  - yubico-yubikey-piv-manager
 
 # See `geerlingguy.mas` role documentation for usage instructions.
 mas_installed_apps: []

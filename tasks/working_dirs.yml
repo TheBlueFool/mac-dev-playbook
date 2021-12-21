@@ -49,18 +49,22 @@
     modification_time: preserve
     access_time: preserve
 
-- name: Copy global git ignore
+- name: Symlink global git ignore
   ansible.builtin.file:
-    src: ~/dotfiles/.gitignore_global
+    src: "{{ dotfiles_repo_local_destination }}/.gitignore_global"
     dest: ~/.gitignore
     state: link
+    mode: 0644
+  become: false
 
 
-- name: Copy global git config
+- name: Symlink global git config
   ansible.builtin.file:
-    src: ~/dotfiles/.gitconfig
+    src: "{{ dotfiles_repo_local_destination }}/.gitconfig"
     dest: ~/.gitconfig
     state: link
+    mode: 0644
+  become: false
 
 
 

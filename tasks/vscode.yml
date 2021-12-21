@@ -2,15 +2,18 @@
 # Copy configuration.
 - name: Ensure vscode config dir exists
   ansible.builtin.file:
-    path: ~/Library/Application\ Support/Code/User/
+    path: '~/Library/Application Support/Code/User/'
     state: directory
-    mode: '0755'
+    mode: 0755
+  become: false
 
 # Copy configuration.
 - name: Symlink config file into config dir
   ansible.builtin.file:
-    src: ~/dotfiles/vscodesettings.json
-    dest: ~/Library/Application\ Support/Code/User/settings.json
+    src: "{{ dotfiles_repo_local_destination }}/vscodesettings.json"
+    dest: '~/Library/Application Support/Code/User/settings.json'
     state: link
+    mode: 0644
+  become: false
   # mkdir -p ~/Library/Application\ Support/Code/User/
   # ln -fs ~/dotfiles/vscode/settings.json ~/Library/Application\ Support/Code/User/settings.json

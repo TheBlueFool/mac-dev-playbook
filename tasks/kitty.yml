@@ -4,11 +4,14 @@
   ansible.builtin.file:
     path: ~/.config/kitty/
     state: directory
-    mode: '0755'
+    mode: 0755
+  become: false
 
 # Copy configuration.
 - name: Symlink Kitty config file into config dir
   ansible.builtin.file:
-    src: ~/dotfiles/kitty.conf 
+    src: "{{ dotfiles_repo_local_destination }}/kitty.conf"
     dest: ~/.config/kitty/kitty.conf
     state: link
+    mode: 0644
+  become: false

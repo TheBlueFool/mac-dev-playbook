@@ -4,12 +4,15 @@
   ansible.builtin.file:
     path: ~/.config
     state: directory
-    mode: '0755'
+    mode: 0755
+  become: false
 
 # Copy configuration.
 - name: Symlink Starship config file into config dir
   ansible.builtin.file:
-    src: ~/dotfiles/starship.toml
+    src: "{{ dotfiles_repo_local_destination }}/starship.toml"
     dest: ~/.config/starship.toml
     state: link
+    mode: 0644
+  become: false
     # ln -fs ~/dotfiles/starship.toml ~/.config/starship.toml

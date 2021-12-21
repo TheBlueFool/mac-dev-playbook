@@ -38,7 +38,7 @@ dotfiles_files:
   - .zshrc
   - .zshenv
   - .zprofile
-  - .gitignore
+  - .gitignore_global
   - .gitconfig
   - .macos
   - .hushlogin
